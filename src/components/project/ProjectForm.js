@@ -10,6 +10,7 @@ export default function ProjectForm({handleSubmit, btnText, projectData}){
     const [categories, setCategories] = useState([]);
     const [project, setProject] = useState(projectData || {});
 
+
     useEffect(() => {
         fetch("http://localhost:5000/categories", {
         method: "GET",
